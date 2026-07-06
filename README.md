@@ -10,6 +10,13 @@
 
 ---
 
+## Quick start
+
+```bash
+git clone https://github.com/technika11y/menu-a11y-engine && cd menu-a11y-engine
+node src/index.js lint examples/menu.json
+```
+
 ## Status — read this first
 
 **Pre-alpha (`v0.1.0-alpha`). Honest state of the code:**
