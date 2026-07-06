@@ -1,0 +1,35 @@
+{
+  "title": "Dinner",
+  "sections": [
+    {
+      "name": "Starters",
+      "items": [
+        {
+          "name": "Sardine Toast",
+          "description": "Cured sardine, sourdough, salsa verde.",
+          "price": 9.5,
+          "allergens": ["fish", "wheat"],
+          "diet": ["dairy-free"]
+        },
+        {
+          "name": "Garden Soup",
+          "description": "Seasonal vegetables, herb oil.",
+          "price": 7,
+          "allergens": [],
+          "diet": ["vegan", "gluten-free"]
+        }
+      ]
+    },
+    {
+      "name": "Mains",
+      "items": [
+        {
+          "name": "Roast Chicken",
+          "description": "Half chicken, root vegetables, jus.",
+          "price": 21,
+          "allergens": []
+        }
+      ]
+    }
+  ]
+}

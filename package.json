@@ -1,0 +1,26 @@
+{
+  "name": "@technika11y/menu-a11y-engine",
+  "version": "0.1.0-alpha",
+  "description": "Turns menu data into WCAG-compliant, allergen-aware, screen-reader-friendly menus — and lints the data for accessibility and allergen completeness.",
+  "type": "module",
+  "bin": {
+    "menu-a11y-engine": "src/index.js"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "node --test"
+  },
+  "keywords": [
+    "accessibility",
+    "a11y",
+    "wcag",
+    "menu",
+    "allergens",
+    "food-service",
+    "pos"
+  ],
+  "license": "Apache-2.0",
+  "engines": {
+    "node": ">=20"
+  }
+}
