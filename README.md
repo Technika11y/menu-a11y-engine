@@ -64,3 +64,7 @@ The safety rule in action:
 ## License
 
 [Apache-2.0](LICENSE). See [`SECURITY.md`](SECURITY.md) and [`CONTRIBUTING.md`](CONTRIBUTING.md).
+
+---
+
+**Part of the [Technika11y](https://github.com/technika11y) suite** · [technika11y.github.io](https://technika11y.github.io/) · security, compliance, and accessibility as one discipline.
