@@ -19,6 +19,7 @@
 | Lint: menu/section/item names present (real headings) | ✅ works |
 | Lint: allergens **must be declared** (absent field = error; empty array = OK) | ✅ works |
 | Lint: unrecognized allergen token warning (Big-9 typo catch) | ✅ works |
+| Lint: structure — duplicate section names, empty sections, negative prices, duplicate items | ✅ works |
 | Render: semantic HTML, valid `aria-labelledby` per section | ✅ works |
 | Render: allergen + dietary info as **text**, never colour/icon-only | ✅ works |
 | **Fails closed** — refuses to render a menu with errors | ✅ works |

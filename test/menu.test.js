@@ -45,3 +45,28 @@ test("render exposes allergens as text and labels each section", () => {
   assert.match(html, /<section aria-labelledby="sec-0-starters">/);
   assert.match(html, /<h2 id="sec-0-starters">Starters<\/h2>/);
 });
+
+test("duplicate section names warn (ambiguous headings/anchors)", () => {
+  const m = menu({ sections: [
+    { name: "Mains", items: [{ name: "A", allergens: [] }] },
+    { name: "Mains", items: [{ name: "B", allergens: [] }] },
+  ] });
+  assert.ok(lintMenu(m).some((f) => f.rule === "duplicate-section-name" && f.severity === "warn"));
+});
+
+test("an empty section warns", () => {
+  const m = menu({ sections: [{ name: "Coming Soon", items: [] }] });
+  assert.ok(lintMenu(m).some((f) => f.rule === "section-empty" && f.severity === "warn"));
+});
+
+test("a negative price warns", () => {
+  const m = menu({ sections: [{ name: "S", items: [{ name: "X", price: -3, allergens: [] }] }] });
+  assert.ok(lintMenu(m).some((f) => f.rule === "price-negative" && f.severity === "warn"));
+});
+
+test("duplicate item names within a section are noted", () => {
+  const m = menu({ sections: [{ name: "S", items: [
+    { name: "Soup", allergens: [] }, { name: "Soup", allergens: [] },
+  ] }] });
+  assert.ok(lintMenu(m).some((f) => f.rule === "duplicate-item-name"));
+});
