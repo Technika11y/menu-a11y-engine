@@ -5,6 +5,7 @@
 >
 > Part of the **Technika11y** suite · *Root access for everyone.* · **the keystone: a11y × food × compliance**
 
+[![ci](https://github.com/technika11y/menu-a11y-engine/actions/workflows/ci.yml/badge.svg)](https://github.com/technika11y/menu-a11y-engine/actions/workflows/ci.yml)
 ![status](https://img.shields.io/badge/status-pre--alpha-orange)
 ![license](https://img.shields.io/badge/license-Apache--2.0-blue)
 
